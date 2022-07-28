@@ -52,6 +52,7 @@ func TestResourcetagsService(t *testing.T) {
 			t.Skipf("Skipping as no json response is provided in testdata")
 		}
 		p := client.Resourcetags.NewDeleteTagsParams([]string{}, "resourcetype")
+		p.SetTags(map[string]string{"testKey": "testValue"})
 		_, err := client.Resourcetags.DeleteTags(p)
 		if err != nil {
 			t.Errorf(err.Error())
