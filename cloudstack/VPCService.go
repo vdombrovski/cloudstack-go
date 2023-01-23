@@ -713,7 +713,7 @@ type CreateVPCResponse struct {
 	Domainid             string                     `json:"domainid"`
 	Fordisplay           bool                       `json:"fordisplay"`
 	Hasannotations       bool                       `json:"hasannotations"`
-	Icon                 string                     `json:"icon"`
+	Icon                 map[string]interface{}     `json:"icon"`
 	Id                   string                     `json:"id"`
 	JobID                string                     `json:"jobid"`
 	Jobstatus            int                        `json:"jobstatus"`
@@ -2841,34 +2841,34 @@ type ListVPCsResponse struct {
 }
 
 type VPC struct {
-	Account              string               `json:"account"`
-	Cidr                 string               `json:"cidr"`
-	Created              string               `json:"created"`
-	Displaytext          string               `json:"displaytext"`
-	Distributedvpcrouter bool                 `json:"distributedvpcrouter"`
-	Domain               string               `json:"domain"`
-	Domainid             string               `json:"domainid"`
-	Fordisplay           bool                 `json:"fordisplay"`
-	Hasannotations       bool                 `json:"hasannotations"`
-	Icon                 string               `json:"icon"`
-	Id                   string               `json:"id"`
-	JobID                string               `json:"jobid"`
-	Jobstatus            int                  `json:"jobstatus"`
-	Name                 string               `json:"name"`
-	Network              []*Network           `json:"network"`
-	Networkdomain        string               `json:"networkdomain"`
-	Project              string               `json:"project"`
-	Projectid            string               `json:"projectid"`
-	Redundantvpcrouter   bool                 `json:"redundantvpcrouter"`
-	Regionlevelvpc       bool                 `json:"regionlevelvpc"`
-	Restartrequired      bool                 `json:"restartrequired"`
-	Service              []VPCServiceInternal `json:"service"`
-	State                string               `json:"state"`
-	Tags                 []Tags               `json:"tags"`
-	Vpcofferingid        string               `json:"vpcofferingid"`
-	Vpcofferingname      string               `json:"vpcofferingname"`
-	Zoneid               string               `json:"zoneid"`
-	Zonename             string               `json:"zonename"`
+	Account              string                 `json:"account"`
+	Cidr                 string                 `json:"cidr"`
+	Created              string                 `json:"created"`
+	Displaytext          string                 `json:"displaytext"`
+	Distributedvpcrouter bool                   `json:"distributedvpcrouter"`
+	Domain               string                 `json:"domain"`
+	Domainid             string                 `json:"domainid"`
+	Fordisplay           bool                   `json:"fordisplay"`
+	Hasannotations       bool                   `json:"hasannotations"`
+	Icon                 map[string]interface{} `json:"icon"`
+	Id                   string                 `json:"id"`
+	JobID                string                 `json:"jobid"`
+	Jobstatus            int                    `json:"jobstatus"`
+	Name                 string                 `json:"name"`
+	Network              []*Network             `json:"network"`
+	Networkdomain        string                 `json:"networkdomain"`
+	Project              string                 `json:"project"`
+	Projectid            string                 `json:"projectid"`
+	Redundantvpcrouter   bool                   `json:"redundantvpcrouter"`
+	Regionlevelvpc       bool                   `json:"regionlevelvpc"`
+	Restartrequired      bool                   `json:"restartrequired"`
+	Service              []VPCServiceInternal   `json:"service"`
+	State                string                 `json:"state"`
+	Tags                 []Tags                 `json:"tags"`
+	Vpcofferingid        string                 `json:"vpcofferingid"`
+	Vpcofferingname      string                 `json:"vpcofferingname"`
+	Zoneid               string                 `json:"zoneid"`
+	Zonename             string                 `json:"zonename"`
 }
 
 type VPCServiceInternal struct {
@@ -3164,7 +3164,7 @@ type UpdateVPCResponse struct {
 	Domainid             string                     `json:"domainid"`
 	Fordisplay           bool                       `json:"fordisplay"`
 	Hasannotations       bool                       `json:"hasannotations"`
-	Icon                 string                     `json:"icon"`
+	Icon                 map[string]interface{}     `json:"icon"`
 	Id                   string                     `json:"id"`
 	JobID                string                     `json:"jobid"`
 	Jobstatus            int                        `json:"jobstatus"`

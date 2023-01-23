@@ -366,7 +366,7 @@ type CreateZoneResponse struct {
 	Domainname            string                       `json:"domainname"`
 	Guestcidraddress      string                       `json:"guestcidraddress"`
 	Hasannotations        bool                         `json:"hasannotations"`
-	Icon                  string                       `json:"icon"`
+	Icon                  map[string]interface{}       `json:"icon"`
 	Id                    string                       `json:"id"`
 	Internaldns1          string                       `json:"internaldns1"`
 	Internaldns2          string                       `json:"internaldns2"`
@@ -1450,33 +1450,33 @@ type ListZonesResponse struct {
 }
 
 type Zone struct {
-	Allocationstate       string            `json:"allocationstate"`
-	Capacity              []ZoneCapacity    `json:"capacity"`
-	Description           string            `json:"description"`
-	Dhcpprovider          string            `json:"dhcpprovider"`
-	Displaytext           string            `json:"displaytext"`
-	Dns1                  string            `json:"dns1"`
-	Dns2                  string            `json:"dns2"`
-	Domain                string            `json:"domain"`
-	Domainid              string            `json:"domainid"`
-	Domainname            string            `json:"domainname"`
-	Guestcidraddress      string            `json:"guestcidraddress"`
-	Hasannotations        bool              `json:"hasannotations"`
-	Icon                  string            `json:"icon"`
-	Id                    string            `json:"id"`
-	Internaldns1          string            `json:"internaldns1"`
-	Internaldns2          string            `json:"internaldns2"`
-	Ip6dns1               string            `json:"ip6dns1"`
-	Ip6dns2               string            `json:"ip6dns2"`
-	JobID                 string            `json:"jobid"`
-	Jobstatus             int               `json:"jobstatus"`
-	Localstorageenabled   bool              `json:"localstorageenabled"`
-	Name                  string            `json:"name"`
-	Networktype           string            `json:"networktype"`
-	Resourcedetails       map[string]string `json:"resourcedetails"`
-	Securitygroupsenabled bool              `json:"securitygroupsenabled"`
-	Tags                  []Tags            `json:"tags"`
-	Zonetoken             string            `json:"zonetoken"`
+	Allocationstate       string                 `json:"allocationstate"`
+	Capacity              []ZoneCapacity         `json:"capacity"`
+	Description           string                 `json:"description"`
+	Dhcpprovider          string                 `json:"dhcpprovider"`
+	Displaytext           string                 `json:"displaytext"`
+	Dns1                  string                 `json:"dns1"`
+	Dns2                  string                 `json:"dns2"`
+	Domain                string                 `json:"domain"`
+	Domainid              string                 `json:"domainid"`
+	Domainname            string                 `json:"domainname"`
+	Guestcidraddress      string                 `json:"guestcidraddress"`
+	Hasannotations        bool                   `json:"hasannotations"`
+	Icon                  map[string]interface{} `json:"icon"`
+	Id                    string                 `json:"id"`
+	Internaldns1          string                 `json:"internaldns1"`
+	Internaldns2          string                 `json:"internaldns2"`
+	Ip6dns1               string                 `json:"ip6dns1"`
+	Ip6dns2               string                 `json:"ip6dns2"`
+	JobID                 string                 `json:"jobid"`
+	Jobstatus             int                    `json:"jobstatus"`
+	Localstorageenabled   bool                   `json:"localstorageenabled"`
+	Name                  string                 `json:"name"`
+	Networktype           string                 `json:"networktype"`
+	Resourcedetails       map[string]string      `json:"resourcedetails"`
+	Securitygroupsenabled bool                   `json:"securitygroupsenabled"`
+	Tags                  []Tags                 `json:"tags"`
+	Zonetoken             string                 `json:"zonetoken"`
 }
 
 type ZoneCapacity struct {
@@ -1825,51 +1825,51 @@ type ListZonesMetricsResponse struct {
 }
 
 type ZonesMetric struct {
-	Allocationstate                 string                `json:"allocationstate"`
-	Capacity                        []ZonesMetricCapacity `json:"capacity"`
-	Clusters                        string                `json:"clusters"`
-	Cpuallocated                    string                `json:"cpuallocated"`
-	Cpuallocateddisablethreshold    bool                  `json:"cpuallocateddisablethreshold"`
-	Cpuallocatedthreshold           bool                  `json:"cpuallocatedthreshold"`
-	Cpudisablethreshold             bool                  `json:"cpudisablethreshold"`
-	Cpumaxdeviation                 string                `json:"cpumaxdeviation"`
-	Cputhreshold                    bool                  `json:"cputhreshold"`
-	Cputotal                        string                `json:"cputotal"`
-	Cpuused                         string                `json:"cpuused"`
-	Description                     string                `json:"description"`
-	Dhcpprovider                    string                `json:"dhcpprovider"`
-	Displaytext                     string                `json:"displaytext"`
-	Dns1                            string                `json:"dns1"`
-	Dns2                            string                `json:"dns2"`
-	Domain                          string                `json:"domain"`
-	Domainid                        string                `json:"domainid"`
-	Domainname                      string                `json:"domainname"`
-	Guestcidraddress                string                `json:"guestcidraddress"`
-	Hasannotations                  bool                  `json:"hasannotations"`
-	Icon                            string                `json:"icon"`
-	Id                              string                `json:"id"`
-	Internaldns1                    string                `json:"internaldns1"`
-	Internaldns2                    string                `json:"internaldns2"`
-	Ip6dns1                         string                `json:"ip6dns1"`
-	Ip6dns2                         string                `json:"ip6dns2"`
-	JobID                           string                `json:"jobid"`
-	Jobstatus                       int                   `json:"jobstatus"`
-	Localstorageenabled             bool                  `json:"localstorageenabled"`
-	Memoryallocated                 string                `json:"memoryallocated"`
-	Memoryallocateddisablethreshold bool                  `json:"memoryallocateddisablethreshold"`
-	Memoryallocatedthreshold        bool                  `json:"memoryallocatedthreshold"`
-	Memorydisablethreshold          bool                  `json:"memorydisablethreshold"`
-	Memorymaxdeviation              string                `json:"memorymaxdeviation"`
-	Memorythreshold                 bool                  `json:"memorythreshold"`
-	Memorytotal                     string                `json:"memorytotal"`
-	Memoryused                      string                `json:"memoryused"`
-	Name                            string                `json:"name"`
-	Networktype                     string                `json:"networktype"`
-	Resourcedetails                 map[string]string     `json:"resourcedetails"`
-	Securitygroupsenabled           bool                  `json:"securitygroupsenabled"`
-	State                           string                `json:"state"`
-	Tags                            []Tags                `json:"tags"`
-	Zonetoken                       string                `json:"zonetoken"`
+	Allocationstate                 string                 `json:"allocationstate"`
+	Capacity                        []ZonesMetricCapacity  `json:"capacity"`
+	Clusters                        string                 `json:"clusters"`
+	Cpuallocated                    string                 `json:"cpuallocated"`
+	Cpuallocateddisablethreshold    bool                   `json:"cpuallocateddisablethreshold"`
+	Cpuallocatedthreshold           bool                   `json:"cpuallocatedthreshold"`
+	Cpudisablethreshold             bool                   `json:"cpudisablethreshold"`
+	Cpumaxdeviation                 string                 `json:"cpumaxdeviation"`
+	Cputhreshold                    bool                   `json:"cputhreshold"`
+	Cputotal                        string                 `json:"cputotal"`
+	Cpuused                         string                 `json:"cpuused"`
+	Description                     string                 `json:"description"`
+	Dhcpprovider                    string                 `json:"dhcpprovider"`
+	Displaytext                     string                 `json:"displaytext"`
+	Dns1                            string                 `json:"dns1"`
+	Dns2                            string                 `json:"dns2"`
+	Domain                          string                 `json:"domain"`
+	Domainid                        string                 `json:"domainid"`
+	Domainname                      string                 `json:"domainname"`
+	Guestcidraddress                string                 `json:"guestcidraddress"`
+	Hasannotations                  bool                   `json:"hasannotations"`
+	Icon                            map[string]interface{} `json:"icon"`
+	Id                              string                 `json:"id"`
+	Internaldns1                    string                 `json:"internaldns1"`
+	Internaldns2                    string                 `json:"internaldns2"`
+	Ip6dns1                         string                 `json:"ip6dns1"`
+	Ip6dns2                         string                 `json:"ip6dns2"`
+	JobID                           string                 `json:"jobid"`
+	Jobstatus                       int                    `json:"jobstatus"`
+	Localstorageenabled             bool                   `json:"localstorageenabled"`
+	Memoryallocated                 string                 `json:"memoryallocated"`
+	Memoryallocateddisablethreshold bool                   `json:"memoryallocateddisablethreshold"`
+	Memoryallocatedthreshold        bool                   `json:"memoryallocatedthreshold"`
+	Memorydisablethreshold          bool                   `json:"memorydisablethreshold"`
+	Memorymaxdeviation              string                 `json:"memorymaxdeviation"`
+	Memorythreshold                 bool                   `json:"memorythreshold"`
+	Memorytotal                     string                 `json:"memorytotal"`
+	Memoryused                      string                 `json:"memoryused"`
+	Name                            string                 `json:"name"`
+	Networktype                     string                 `json:"networktype"`
+	Resourcedetails                 map[string]string      `json:"resourcedetails"`
+	Securitygroupsenabled           bool                   `json:"securitygroupsenabled"`
+	State                           string                 `json:"state"`
+	Tags                            []Tags                 `json:"tags"`
+	Zonetoken                       string                 `json:"zonetoken"`
 }
 
 type ZonesMetricCapacity struct {
@@ -2326,7 +2326,7 @@ type UpdateZoneResponse struct {
 	Domainname            string                       `json:"domainname"`
 	Guestcidraddress      string                       `json:"guestcidraddress"`
 	Hasannotations        bool                         `json:"hasannotations"`
-	Icon                  string                       `json:"icon"`
+	Icon                  map[string]interface{}       `json:"icon"`
 	Id                    string                       `json:"id"`
 	Internaldns1          string                       `json:"internaldns1"`
 	Internaldns2          string                       `json:"internaldns2"`

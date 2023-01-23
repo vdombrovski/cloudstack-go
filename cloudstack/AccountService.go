@@ -367,7 +367,7 @@ type CreateAccountResponse struct {
 	Domainid                  string                      `json:"domainid"`
 	Domainpath                string                      `json:"domainpath"`
 	Groups                    []string                    `json:"groups"`
-	Icon                      string                      `json:"icon"`
+	Icon                      map[string]interface{}      `json:"icon"`
 	Id                        string                      `json:"id"`
 	Ipavailable               string                      `json:"ipavailable"`
 	Iplimit                   string                      `json:"iplimit"`
@@ -420,28 +420,28 @@ type CreateAccountResponse struct {
 }
 
 type CreateAccountResponseUser struct {
-	Account             string `json:"account"`
-	Accountid           string `json:"accountid"`
-	Accounttype         int    `json:"accounttype"`
-	Apikey              string `json:"apikey"`
-	Created             string `json:"created"`
-	Domain              string `json:"domain"`
-	Domainid            string `json:"domainid"`
-	Email               string `json:"email"`
-	Firstname           string `json:"firstname"`
-	Icon                string `json:"icon"`
-	Id                  string `json:"id"`
-	Iscallerchilddomain bool   `json:"iscallerchilddomain"`
-	Isdefault           bool   `json:"isdefault"`
-	Lastname            string `json:"lastname"`
-	Roleid              string `json:"roleid"`
-	Rolename            string `json:"rolename"`
-	Roletype            string `json:"roletype"`
-	Secretkey           string `json:"secretkey"`
-	State               string `json:"state"`
-	Timezone            string `json:"timezone"`
-	Username            string `json:"username"`
-	Usersource          string `json:"usersource"`
+	Account             string                 `json:"account"`
+	Accountid           string                 `json:"accountid"`
+	Accounttype         int                    `json:"accounttype"`
+	Apikey              string                 `json:"apikey"`
+	Created             string                 `json:"created"`
+	Domain              string                 `json:"domain"`
+	Domainid            string                 `json:"domainid"`
+	Email               string                 `json:"email"`
+	Firstname           string                 `json:"firstname"`
+	Icon                map[string]interface{} `json:"icon"`
+	Id                  string                 `json:"id"`
+	Iscallerchilddomain bool                   `json:"iscallerchilddomain"`
+	Isdefault           bool                   `json:"isdefault"`
+	Lastname            string                 `json:"lastname"`
+	Roleid              string                 `json:"roleid"`
+	Rolename            string                 `json:"rolename"`
+	Roletype            string                 `json:"roletype"`
+	Secretkey           string                 `json:"secretkey"`
+	State               string                 `json:"state"`
+	Timezone            string                 `json:"timezone"`
+	Username            string                 `json:"username"`
+	Usersource          string                 `json:"usersource"`
 }
 
 type DeleteAccountParams struct {
@@ -661,7 +661,7 @@ type DisableAccountResponse struct {
 	Domainid                  string                       `json:"domainid"`
 	Domainpath                string                       `json:"domainpath"`
 	Groups                    []string                     `json:"groups"`
-	Icon                      string                       `json:"icon"`
+	Icon                      map[string]interface{}       `json:"icon"`
 	Id                        string                       `json:"id"`
 	Ipavailable               string                       `json:"ipavailable"`
 	Iplimit                   string                       `json:"iplimit"`
@@ -714,28 +714,28 @@ type DisableAccountResponse struct {
 }
 
 type DisableAccountResponseUser struct {
-	Account             string `json:"account"`
-	Accountid           string `json:"accountid"`
-	Accounttype         int    `json:"accounttype"`
-	Apikey              string `json:"apikey"`
-	Created             string `json:"created"`
-	Domain              string `json:"domain"`
-	Domainid            string `json:"domainid"`
-	Email               string `json:"email"`
-	Firstname           string `json:"firstname"`
-	Icon                string `json:"icon"`
-	Id                  string `json:"id"`
-	Iscallerchilddomain bool   `json:"iscallerchilddomain"`
-	Isdefault           bool   `json:"isdefault"`
-	Lastname            string `json:"lastname"`
-	Roleid              string `json:"roleid"`
-	Rolename            string `json:"rolename"`
-	Roletype            string `json:"roletype"`
-	Secretkey           string `json:"secretkey"`
-	State               string `json:"state"`
-	Timezone            string `json:"timezone"`
-	Username            string `json:"username"`
-	Usersource          string `json:"usersource"`
+	Account             string                 `json:"account"`
+	Accountid           string                 `json:"accountid"`
+	Accounttype         int                    `json:"accounttype"`
+	Apikey              string                 `json:"apikey"`
+	Created             string                 `json:"created"`
+	Domain              string                 `json:"domain"`
+	Domainid            string                 `json:"domainid"`
+	Email               string                 `json:"email"`
+	Firstname           string                 `json:"firstname"`
+	Icon                map[string]interface{} `json:"icon"`
+	Id                  string                 `json:"id"`
+	Iscallerchilddomain bool                   `json:"iscallerchilddomain"`
+	Isdefault           bool                   `json:"isdefault"`
+	Lastname            string                 `json:"lastname"`
+	Roleid              string                 `json:"roleid"`
+	Rolename            string                 `json:"rolename"`
+	Roletype            string                 `json:"roletype"`
+	Secretkey           string                 `json:"secretkey"`
+	State               string                 `json:"state"`
+	Timezone            string                 `json:"timezone"`
+	Username            string                 `json:"username"`
+	Usersource          string                 `json:"usersource"`
 }
 
 type EnableAccountParams struct {
@@ -839,7 +839,7 @@ type EnableAccountResponse struct {
 	Domainid                  string                      `json:"domainid"`
 	Domainpath                string                      `json:"domainpath"`
 	Groups                    []string                    `json:"groups"`
-	Icon                      string                      `json:"icon"`
+	Icon                      map[string]interface{}      `json:"icon"`
 	Id                        string                      `json:"id"`
 	Ipavailable               string                      `json:"ipavailable"`
 	Iplimit                   string                      `json:"iplimit"`
@@ -892,28 +892,28 @@ type EnableAccountResponse struct {
 }
 
 type EnableAccountResponseUser struct {
-	Account             string `json:"account"`
-	Accountid           string `json:"accountid"`
-	Accounttype         int    `json:"accounttype"`
-	Apikey              string `json:"apikey"`
-	Created             string `json:"created"`
-	Domain              string `json:"domain"`
-	Domainid            string `json:"domainid"`
-	Email               string `json:"email"`
-	Firstname           string `json:"firstname"`
-	Icon                string `json:"icon"`
-	Id                  string `json:"id"`
-	Iscallerchilddomain bool   `json:"iscallerchilddomain"`
-	Isdefault           bool   `json:"isdefault"`
-	Lastname            string `json:"lastname"`
-	Roleid              string `json:"roleid"`
-	Rolename            string `json:"rolename"`
-	Roletype            string `json:"roletype"`
-	Secretkey           string `json:"secretkey"`
-	State               string `json:"state"`
-	Timezone            string `json:"timezone"`
-	Username            string `json:"username"`
-	Usersource          string `json:"usersource"`
+	Account             string                 `json:"account"`
+	Accountid           string                 `json:"accountid"`
+	Accounttype         int                    `json:"accounttype"`
+	Apikey              string                 `json:"apikey"`
+	Created             string                 `json:"created"`
+	Domain              string                 `json:"domain"`
+	Domainid            string                 `json:"domainid"`
+	Email               string                 `json:"email"`
+	Firstname           string                 `json:"firstname"`
+	Icon                map[string]interface{} `json:"icon"`
+	Id                  string                 `json:"id"`
+	Iscallerchilddomain bool                   `json:"iscallerchilddomain"`
+	Isdefault           bool                   `json:"isdefault"`
+	Lastname            string                 `json:"lastname"`
+	Roleid              string                 `json:"roleid"`
+	Rolename            string                 `json:"rolename"`
+	Roletype            string                 `json:"roletype"`
+	Secretkey           string                 `json:"secretkey"`
+	State               string                 `json:"state"`
+	Timezone            string                 `json:"timezone"`
+	Username            string                 `json:"username"`
+	Usersource          string                 `json:"usersource"`
 }
 
 type GetSolidFireAccountIdParams struct {
@@ -1361,92 +1361,92 @@ type ListAccountsResponse struct {
 }
 
 type Account struct {
-	Accountdetails            map[string]string `json:"accountdetails"`
-	Accounttype               int               `json:"accounttype"`
-	Cpuavailable              string            `json:"cpuavailable"`
-	Cpulimit                  string            `json:"cpulimit"`
-	Cputotal                  int64             `json:"cputotal"`
-	Created                   string            `json:"created"`
-	Defaultzoneid             string            `json:"defaultzoneid"`
-	Domain                    string            `json:"domain"`
-	Domainid                  string            `json:"domainid"`
-	Domainpath                string            `json:"domainpath"`
-	Groups                    []string          `json:"groups"`
-	Icon                      string            `json:"icon"`
-	Id                        string            `json:"id"`
-	Ipavailable               string            `json:"ipavailable"`
-	Iplimit                   string            `json:"iplimit"`
-	Iptotal                   int64             `json:"iptotal"`
-	Iscleanuprequired         bool              `json:"iscleanuprequired"`
-	Isdefault                 bool              `json:"isdefault"`
-	JobID                     string            `json:"jobid"`
-	Jobstatus                 int               `json:"jobstatus"`
-	Memoryavailable           string            `json:"memoryavailable"`
-	Memorylimit               string            `json:"memorylimit"`
-	Memorytotal               int64             `json:"memorytotal"`
-	Name                      string            `json:"name"`
-	Networkavailable          string            `json:"networkavailable"`
-	Networkdomain             string            `json:"networkdomain"`
-	Networklimit              string            `json:"networklimit"`
-	Networktotal              int64             `json:"networktotal"`
-	Primarystorageavailable   string            `json:"primarystorageavailable"`
-	Primarystoragelimit       string            `json:"primarystoragelimit"`
-	Primarystoragetotal       int64             `json:"primarystoragetotal"`
-	Projectavailable          string            `json:"projectavailable"`
-	Projectlimit              string            `json:"projectlimit"`
-	Projecttotal              int64             `json:"projecttotal"`
-	Receivedbytes             int64             `json:"receivedbytes"`
-	Roleid                    string            `json:"roleid"`
-	Rolename                  string            `json:"rolename"`
-	Roletype                  string            `json:"roletype"`
-	Secondarystorageavailable string            `json:"secondarystorageavailable"`
-	Secondarystoragelimit     string            `json:"secondarystoragelimit"`
-	Secondarystoragetotal     float64           `json:"secondarystoragetotal"`
-	Sentbytes                 int64             `json:"sentbytes"`
-	Snapshotavailable         string            `json:"snapshotavailable"`
-	Snapshotlimit             string            `json:"snapshotlimit"`
-	Snapshottotal             int64             `json:"snapshottotal"`
-	State                     string            `json:"state"`
-	Templateavailable         string            `json:"templateavailable"`
-	Templatelimit             string            `json:"templatelimit"`
-	Templatetotal             int64             `json:"templatetotal"`
-	User                      []AccountUser     `json:"user"`
-	Vmavailable               string            `json:"vmavailable"`
-	Vmlimit                   string            `json:"vmlimit"`
-	Vmrunning                 int               `json:"vmrunning"`
-	Vmstopped                 int               `json:"vmstopped"`
-	Vmtotal                   int64             `json:"vmtotal"`
-	Volumeavailable           string            `json:"volumeavailable"`
-	Volumelimit               string            `json:"volumelimit"`
-	Volumetotal               int64             `json:"volumetotal"`
-	Vpcavailable              string            `json:"vpcavailable"`
-	Vpclimit                  string            `json:"vpclimit"`
-	Vpctotal                  int64             `json:"vpctotal"`
+	Accountdetails            map[string]string      `json:"accountdetails"`
+	Accounttype               int                    `json:"accounttype"`
+	Cpuavailable              string                 `json:"cpuavailable"`
+	Cpulimit                  string                 `json:"cpulimit"`
+	Cputotal                  int64                  `json:"cputotal"`
+	Created                   string                 `json:"created"`
+	Defaultzoneid             string                 `json:"defaultzoneid"`
+	Domain                    string                 `json:"domain"`
+	Domainid                  string                 `json:"domainid"`
+	Domainpath                string                 `json:"domainpath"`
+	Groups                    []string               `json:"groups"`
+	Icon                      map[string]interface{} `json:"icon"`
+	Id                        string                 `json:"id"`
+	Ipavailable               string                 `json:"ipavailable"`
+	Iplimit                   string                 `json:"iplimit"`
+	Iptotal                   int64                  `json:"iptotal"`
+	Iscleanuprequired         bool                   `json:"iscleanuprequired"`
+	Isdefault                 bool                   `json:"isdefault"`
+	JobID                     string                 `json:"jobid"`
+	Jobstatus                 int                    `json:"jobstatus"`
+	Memoryavailable           string                 `json:"memoryavailable"`
+	Memorylimit               string                 `json:"memorylimit"`
+	Memorytotal               int64                  `json:"memorytotal"`
+	Name                      string                 `json:"name"`
+	Networkavailable          string                 `json:"networkavailable"`
+	Networkdomain             string                 `json:"networkdomain"`
+	Networklimit              string                 `json:"networklimit"`
+	Networktotal              int64                  `json:"networktotal"`
+	Primarystorageavailable   string                 `json:"primarystorageavailable"`
+	Primarystoragelimit       string                 `json:"primarystoragelimit"`
+	Primarystoragetotal       int64                  `json:"primarystoragetotal"`
+	Projectavailable          string                 `json:"projectavailable"`
+	Projectlimit              string                 `json:"projectlimit"`
+	Projecttotal              int64                  `json:"projecttotal"`
+	Receivedbytes             int64                  `json:"receivedbytes"`
+	Roleid                    string                 `json:"roleid"`
+	Rolename                  string                 `json:"rolename"`
+	Roletype                  string                 `json:"roletype"`
+	Secondarystorageavailable string                 `json:"secondarystorageavailable"`
+	Secondarystoragelimit     string                 `json:"secondarystoragelimit"`
+	Secondarystoragetotal     float64                `json:"secondarystoragetotal"`
+	Sentbytes                 int64                  `json:"sentbytes"`
+	Snapshotavailable         string                 `json:"snapshotavailable"`
+	Snapshotlimit             string                 `json:"snapshotlimit"`
+	Snapshottotal             int64                  `json:"snapshottotal"`
+	State                     string                 `json:"state"`
+	Templateavailable         string                 `json:"templateavailable"`
+	Templatelimit             string                 `json:"templatelimit"`
+	Templatetotal             int64                  `json:"templatetotal"`
+	User                      []AccountUser          `json:"user"`
+	Vmavailable               string                 `json:"vmavailable"`
+	Vmlimit                   string                 `json:"vmlimit"`
+	Vmrunning                 int                    `json:"vmrunning"`
+	Vmstopped                 int                    `json:"vmstopped"`
+	Vmtotal                   int64                  `json:"vmtotal"`
+	Volumeavailable           string                 `json:"volumeavailable"`
+	Volumelimit               string                 `json:"volumelimit"`
+	Volumetotal               int64                  `json:"volumetotal"`
+	Vpcavailable              string                 `json:"vpcavailable"`
+	Vpclimit                  string                 `json:"vpclimit"`
+	Vpctotal                  int64                  `json:"vpctotal"`
 }
 
 type AccountUser struct {
-	Account             string `json:"account"`
-	Accountid           string `json:"accountid"`
-	Accounttype         int    `json:"accounttype"`
-	Apikey              string `json:"apikey"`
-	Created             string `json:"created"`
-	Domain              string `json:"domain"`
-	Domainid            string `json:"domainid"`
-	Email               string `json:"email"`
-	Firstname           string `json:"firstname"`
-	Icon                string `json:"icon"`
-	Id                  string `json:"id"`
-	Iscallerchilddomain bool   `json:"iscallerchilddomain"`
-	Isdefault           bool   `json:"isdefault"`
-	Lastname            string `json:"lastname"`
-	Roleid              string `json:"roleid"`
-	Rolename            string `json:"rolename"`
-	Roletype            string `json:"roletype"`
-	Secretkey           string `json:"secretkey"`
-	State               string `json:"state"`
-	Timezone            string `json:"timezone"`
-	Username            string `json:"username"`
-	Usersource          string `json:"usersource"`
+	Account             string                 `json:"account"`
+	Accountid           string                 `json:"accountid"`
+	Accounttype         int                    `json:"accounttype"`
+	Apikey              string                 `json:"apikey"`
+	Created             string                 `json:"created"`
+	Domain              string                 `json:"domain"`
+	Domainid            string                 `json:"domainid"`
+	Email               string                 `json:"email"`
+	Firstname           string                 `json:"firstname"`
+	Icon                map[string]interface{} `json:"icon"`
+	Id                  string                 `json:"id"`
+	Iscallerchilddomain bool                   `json:"iscallerchilddomain"`
+	Isdefault           bool                   `json:"isdefault"`
+	Lastname            string                 `json:"lastname"`
+	Roleid              string                 `json:"roleid"`
+	Rolename            string                 `json:"rolename"`
+	Roletype            string                 `json:"roletype"`
+	Secretkey           string                 `json:"secretkey"`
+	State               string                 `json:"state"`
+	Timezone            string                 `json:"timezone"`
+	Username            string                 `json:"username"`
+	Usersource          string                 `json:"usersource"`
 }
 
 type ListProjectAccountsParams struct {
@@ -1674,54 +1674,54 @@ type ListProjectAccountsResponse struct {
 }
 
 type ProjectAccount struct {
-	Cpuavailable              string              `json:"cpuavailable"`
-	Cpulimit                  string              `json:"cpulimit"`
-	Cputotal                  int64               `json:"cputotal"`
-	Created                   string              `json:"created"`
-	Displaytext               string              `json:"displaytext"`
-	Domain                    string              `json:"domain"`
-	Domainid                  string              `json:"domainid"`
-	Icon                      string              `json:"icon"`
-	Id                        string              `json:"id"`
-	Ipavailable               string              `json:"ipavailable"`
-	Iplimit                   string              `json:"iplimit"`
-	Iptotal                   int64               `json:"iptotal"`
-	JobID                     string              `json:"jobid"`
-	Jobstatus                 int                 `json:"jobstatus"`
-	Memoryavailable           string              `json:"memoryavailable"`
-	Memorylimit               string              `json:"memorylimit"`
-	Memorytotal               int64               `json:"memorytotal"`
-	Name                      string              `json:"name"`
-	Networkavailable          string              `json:"networkavailable"`
-	Networklimit              string              `json:"networklimit"`
-	Networktotal              int64               `json:"networktotal"`
-	Owner                     []map[string]string `json:"owner"`
-	Primarystorageavailable   string              `json:"primarystorageavailable"`
-	Primarystoragelimit       string              `json:"primarystoragelimit"`
-	Primarystoragetotal       int64               `json:"primarystoragetotal"`
-	Projectaccountname        string              `json:"projectaccountname"`
-	Secondarystorageavailable string              `json:"secondarystorageavailable"`
-	Secondarystoragelimit     string              `json:"secondarystoragelimit"`
-	Secondarystoragetotal     float64             `json:"secondarystoragetotal"`
-	Snapshotavailable         string              `json:"snapshotavailable"`
-	Snapshotlimit             string              `json:"snapshotlimit"`
-	Snapshottotal             int64               `json:"snapshottotal"`
-	State                     string              `json:"state"`
-	Tags                      []Tags              `json:"tags"`
-	Templateavailable         string              `json:"templateavailable"`
-	Templatelimit             string              `json:"templatelimit"`
-	Templatetotal             int64               `json:"templatetotal"`
-	Vmavailable               string              `json:"vmavailable"`
-	Vmlimit                   string              `json:"vmlimit"`
-	Vmrunning                 int                 `json:"vmrunning"`
-	Vmstopped                 int                 `json:"vmstopped"`
-	Vmtotal                   int64               `json:"vmtotal"`
-	Volumeavailable           string              `json:"volumeavailable"`
-	Volumelimit               string              `json:"volumelimit"`
-	Volumetotal               int64               `json:"volumetotal"`
-	Vpcavailable              string              `json:"vpcavailable"`
-	Vpclimit                  string              `json:"vpclimit"`
-	Vpctotal                  int64               `json:"vpctotal"`
+	Cpuavailable              string                 `json:"cpuavailable"`
+	Cpulimit                  string                 `json:"cpulimit"`
+	Cputotal                  int64                  `json:"cputotal"`
+	Created                   string                 `json:"created"`
+	Displaytext               string                 `json:"displaytext"`
+	Domain                    string                 `json:"domain"`
+	Domainid                  string                 `json:"domainid"`
+	Icon                      map[string]interface{} `json:"icon"`
+	Id                        string                 `json:"id"`
+	Ipavailable               string                 `json:"ipavailable"`
+	Iplimit                   string                 `json:"iplimit"`
+	Iptotal                   int64                  `json:"iptotal"`
+	JobID                     string                 `json:"jobid"`
+	Jobstatus                 int                    `json:"jobstatus"`
+	Memoryavailable           string                 `json:"memoryavailable"`
+	Memorylimit               string                 `json:"memorylimit"`
+	Memorytotal               int64                  `json:"memorytotal"`
+	Name                      string                 `json:"name"`
+	Networkavailable          string                 `json:"networkavailable"`
+	Networklimit              string                 `json:"networklimit"`
+	Networktotal              int64                  `json:"networktotal"`
+	Owner                     []map[string]string    `json:"owner"`
+	Primarystorageavailable   string                 `json:"primarystorageavailable"`
+	Primarystoragelimit       string                 `json:"primarystoragelimit"`
+	Primarystoragetotal       int64                  `json:"primarystoragetotal"`
+	Projectaccountname        string                 `json:"projectaccountname"`
+	Secondarystorageavailable string                 `json:"secondarystorageavailable"`
+	Secondarystoragelimit     string                 `json:"secondarystoragelimit"`
+	Secondarystoragetotal     float64                `json:"secondarystoragetotal"`
+	Snapshotavailable         string                 `json:"snapshotavailable"`
+	Snapshotlimit             string                 `json:"snapshotlimit"`
+	Snapshottotal             int64                  `json:"snapshottotal"`
+	State                     string                 `json:"state"`
+	Tags                      []Tags                 `json:"tags"`
+	Templateavailable         string                 `json:"templateavailable"`
+	Templatelimit             string                 `json:"templatelimit"`
+	Templatetotal             int64                  `json:"templatetotal"`
+	Vmavailable               string                 `json:"vmavailable"`
+	Vmlimit                   string                 `json:"vmlimit"`
+	Vmrunning                 int                    `json:"vmrunning"`
+	Vmstopped                 int                    `json:"vmstopped"`
+	Vmtotal                   int64                  `json:"vmtotal"`
+	Volumeavailable           string                 `json:"volumeavailable"`
+	Volumelimit               string                 `json:"volumelimit"`
+	Volumetotal               int64                  `json:"volumetotal"`
+	Vpcavailable              string                 `json:"vpcavailable"`
+	Vpclimit                  string                 `json:"vpclimit"`
+	Vpctotal                  int64                  `json:"vpctotal"`
 }
 
 type Tags struct {
@@ -1822,7 +1822,7 @@ type LockAccountResponse struct {
 	Domainid                  string                    `json:"domainid"`
 	Domainpath                string                    `json:"domainpath"`
 	Groups                    []string                  `json:"groups"`
-	Icon                      string                    `json:"icon"`
+	Icon                      map[string]interface{}    `json:"icon"`
 	Id                        string                    `json:"id"`
 	Ipavailable               string                    `json:"ipavailable"`
 	Iplimit                   string                    `json:"iplimit"`
@@ -1875,28 +1875,28 @@ type LockAccountResponse struct {
 }
 
 type LockAccountResponseUser struct {
-	Account             string `json:"account"`
-	Accountid           string `json:"accountid"`
-	Accounttype         int    `json:"accounttype"`
-	Apikey              string `json:"apikey"`
-	Created             string `json:"created"`
-	Domain              string `json:"domain"`
-	Domainid            string `json:"domainid"`
-	Email               string `json:"email"`
-	Firstname           string `json:"firstname"`
-	Icon                string `json:"icon"`
-	Id                  string `json:"id"`
-	Iscallerchilddomain bool   `json:"iscallerchilddomain"`
-	Isdefault           bool   `json:"isdefault"`
-	Lastname            string `json:"lastname"`
-	Roleid              string `json:"roleid"`
-	Rolename            string `json:"rolename"`
-	Roletype            string `json:"roletype"`
-	Secretkey           string `json:"secretkey"`
-	State               string `json:"state"`
-	Timezone            string `json:"timezone"`
-	Username            string `json:"username"`
-	Usersource          string `json:"usersource"`
+	Account             string                 `json:"account"`
+	Accountid           string                 `json:"accountid"`
+	Accounttype         int                    `json:"accounttype"`
+	Apikey              string                 `json:"apikey"`
+	Created             string                 `json:"created"`
+	Domain              string                 `json:"domain"`
+	Domainid            string                 `json:"domainid"`
+	Email               string                 `json:"email"`
+	Firstname           string                 `json:"firstname"`
+	Icon                map[string]interface{} `json:"icon"`
+	Id                  string                 `json:"id"`
+	Iscallerchilddomain bool                   `json:"iscallerchilddomain"`
+	Isdefault           bool                   `json:"isdefault"`
+	Lastname            string                 `json:"lastname"`
+	Roleid              string                 `json:"roleid"`
+	Rolename            string                 `json:"rolename"`
+	Roletype            string                 `json:"roletype"`
+	Secretkey           string                 `json:"secretkey"`
+	State               string                 `json:"state"`
+	Timezone            string                 `json:"timezone"`
+	Username            string                 `json:"username"`
+	Usersource          string                 `json:"usersource"`
 }
 
 type MarkDefaultZoneForAccountParams struct {
@@ -2023,7 +2023,7 @@ type MarkDefaultZoneForAccountResponse struct {
 	Domainid                  string                                  `json:"domainid"`
 	Domainpath                string                                  `json:"domainpath"`
 	Groups                    []string                                `json:"groups"`
-	Icon                      string                                  `json:"icon"`
+	Icon                      map[string]interface{}                  `json:"icon"`
 	Id                        string                                  `json:"id"`
 	Ipavailable               string                                  `json:"ipavailable"`
 	Iplimit                   string                                  `json:"iplimit"`
@@ -2076,28 +2076,28 @@ type MarkDefaultZoneForAccountResponse struct {
 }
 
 type MarkDefaultZoneForAccountResponseUser struct {
-	Account             string `json:"account"`
-	Accountid           string `json:"accountid"`
-	Accounttype         int    `json:"accounttype"`
-	Apikey              string `json:"apikey"`
-	Created             string `json:"created"`
-	Domain              string `json:"domain"`
-	Domainid            string `json:"domainid"`
-	Email               string `json:"email"`
-	Firstname           string `json:"firstname"`
-	Icon                string `json:"icon"`
-	Id                  string `json:"id"`
-	Iscallerchilddomain bool   `json:"iscallerchilddomain"`
-	Isdefault           bool   `json:"isdefault"`
-	Lastname            string `json:"lastname"`
-	Roleid              string `json:"roleid"`
-	Rolename            string `json:"rolename"`
-	Roletype            string `json:"roletype"`
-	Secretkey           string `json:"secretkey"`
-	State               string `json:"state"`
-	Timezone            string `json:"timezone"`
-	Username            string `json:"username"`
-	Usersource          string `json:"usersource"`
+	Account             string                 `json:"account"`
+	Accountid           string                 `json:"accountid"`
+	Accounttype         int                    `json:"accounttype"`
+	Apikey              string                 `json:"apikey"`
+	Created             string                 `json:"created"`
+	Domain              string                 `json:"domain"`
+	Domainid            string                 `json:"domainid"`
+	Email               string                 `json:"email"`
+	Firstname           string                 `json:"firstname"`
+	Icon                map[string]interface{} `json:"icon"`
+	Id                  string                 `json:"id"`
+	Iscallerchilddomain bool                   `json:"iscallerchilddomain"`
+	Isdefault           bool                   `json:"isdefault"`
+	Lastname            string                 `json:"lastname"`
+	Roleid              string                 `json:"roleid"`
+	Rolename            string                 `json:"rolename"`
+	Roletype            string                 `json:"roletype"`
+	Secretkey           string                 `json:"secretkey"`
+	State               string                 `json:"state"`
+	Timezone            string                 `json:"timezone"`
+	Username            string                 `json:"username"`
+	Usersource          string                 `json:"usersource"`
 }
 
 type UpdateAccountParams struct {
@@ -2277,7 +2277,7 @@ type UpdateAccountResponse struct {
 	Domainid                  string                      `json:"domainid"`
 	Domainpath                string                      `json:"domainpath"`
 	Groups                    []string                    `json:"groups"`
-	Icon                      string                      `json:"icon"`
+	Icon                      map[string]interface{}      `json:"icon"`
 	Id                        string                      `json:"id"`
 	Ipavailable               string                      `json:"ipavailable"`
 	Iplimit                   string                      `json:"iplimit"`
@@ -2330,26 +2330,26 @@ type UpdateAccountResponse struct {
 }
 
 type UpdateAccountResponseUser struct {
-	Account             string `json:"account"`
-	Accountid           string `json:"accountid"`
-	Accounttype         int    `json:"accounttype"`
-	Apikey              string `json:"apikey"`
-	Created             string `json:"created"`
-	Domain              string `json:"domain"`
-	Domainid            string `json:"domainid"`
-	Email               string `json:"email"`
-	Firstname           string `json:"firstname"`
-	Icon                string `json:"icon"`
-	Id                  string `json:"id"`
-	Iscallerchilddomain bool   `json:"iscallerchilddomain"`
-	Isdefault           bool   `json:"isdefault"`
-	Lastname            string `json:"lastname"`
-	Roleid              string `json:"roleid"`
-	Rolename            string `json:"rolename"`
-	Roletype            string `json:"roletype"`
-	Secretkey           string `json:"secretkey"`
-	State               string `json:"state"`
-	Timezone            string `json:"timezone"`
-	Username            string `json:"username"`
-	Usersource          string `json:"usersource"`
+	Account             string                 `json:"account"`
+	Accountid           string                 `json:"accountid"`
+	Accounttype         int                    `json:"accounttype"`
+	Apikey              string                 `json:"apikey"`
+	Created             string                 `json:"created"`
+	Domain              string                 `json:"domain"`
+	Domainid            string                 `json:"domainid"`
+	Email               string                 `json:"email"`
+	Firstname           string                 `json:"firstname"`
+	Icon                map[string]interface{} `json:"icon"`
+	Id                  string                 `json:"id"`
+	Iscallerchilddomain bool                   `json:"iscallerchilddomain"`
+	Isdefault           bool                   `json:"isdefault"`
+	Lastname            string                 `json:"lastname"`
+	Roleid              string                 `json:"roleid"`
+	Rolename            string                 `json:"rolename"`
+	Roletype            string                 `json:"roletype"`
+	Secretkey           string                 `json:"secretkey"`
+	State               string                 `json:"state"`
+	Timezone            string                 `json:"timezone"`
+	Username            string                 `json:"username"`
+	Usersource          string                 `json:"usersource"`
 }
